@@ -1,0 +1,9 @@
+{
+  "name": "marketing-website-root",
+  "private": true,
+  "scripts": {
+    "postinstall": "cd frontend && npm ci",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start"
+  }
+}

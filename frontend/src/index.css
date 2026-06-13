@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Instructs Tailwind v4 to look for the .dark class on the <html> tag */
+@variant dark (&:where(.dark, .dark *));
+
+/* Smooth color transitions for light and dark mode switching */
+body, nav, footer, div, section, h1, h2, h3, p, a, button {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
